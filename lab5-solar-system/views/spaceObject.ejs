@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5: The Solar System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="/CSS/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>The Solar System</h1>
+    </header>
+
+    <%- include('partials/navbar.ejs') %>
+
+    <main class="content-shell">
+        <section class="content-grid">
+            <article class="content-panel">
+                <h2><%= title %></h2>
+                <p><%= objectInfo.def %></p>
+                <a href="<%= objectInfo.link %>" target="_blank" class="btn btn-info mt-3">Learn more on NASA</a>
+            </article>
+
+            <figure class="media-panel">
+                <img src="<%= objectInfo.image %>" class="main-image" alt="<%= title %>">
+            </figure>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Created by <%= studentName %></p>
+    </footer>
+</body>
+
+</html>

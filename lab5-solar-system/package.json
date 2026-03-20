@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "expres": "^0.0.5",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "npm-solarsystem": "^1.1.5"
+  },
+  "name": "lab5-solar-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
